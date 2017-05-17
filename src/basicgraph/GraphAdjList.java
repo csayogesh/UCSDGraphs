@@ -19,7 +19,7 @@ public class GraphAdjList extends Graph {
      * Create a new empty Graph
      */
     public GraphAdjList() {
-        adjListsMap = new HashMap<Integer, ArrayList<Integer>>();
+        adjListsMap = new HashMap<>();
     }
 
     /**
@@ -99,7 +99,7 @@ public class GraphAdjList extends Graph {
     }
 
     public static void main(String[] args) {
-        GraphAdjList adjList = new GraphAdjList();
+        Graph adjList = new GraphAdjMatrix();
         adjList.addVertex();
         adjList.addVertex();
         adjList.addVertex();
