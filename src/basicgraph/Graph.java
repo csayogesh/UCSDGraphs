@@ -197,9 +197,7 @@ public abstract class Graph {
      * @return The String label of this vertex
      */
     public String getLabel(int v) {
-        if (vertexLabels.containsKey(v)) {
-            return vertexLabels.get(v);
-        } else return null;
+        return vertexLabels.getOrDefault(v, null);
     }
 
     /**
@@ -209,8 +207,8 @@ public abstract class Graph {
      * @param v the index of vertex.
      * @return List<Integer> a list of indices of vertices.
      */
-    public List<Integer> getDistance2(int v) {
-        LinkedList<Object> q = new LinkedList() {{
+    public ArrayList getDistance2(int v) {
+        LinkedList q = new LinkedList() {{
             add(v);
             add(new Object());
         }};
