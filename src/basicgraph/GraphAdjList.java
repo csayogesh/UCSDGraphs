@@ -138,6 +138,8 @@ public class GraphAdjList extends Graph {
         adjList.addVertex();
         adjList.addVertex();
         adjList.addVertex();
+        adjList.addEdge(0, 1);
+        adjList.addEdge(1, 1);
         adjList.addEdge(1, 2);
         List<Integer> ls = adjList.getDistance2(0);
         System.out.println();
